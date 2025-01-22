@@ -1,0 +1,70 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <!-- Imagen de la criptomoneda -->
+    <ImageView
+        android:id="@+id/crypto_thumb"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/crypto_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <!-- Nombre de la criptomoneda -->
+    <TextView
+        android:id="@+id/crypto_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/crypto_thumb"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Símbolo de la criptomoneda -->
+    <TextView
+        android:id="@+id/crypto_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@id/crypto_name"
+        app:layout_constraintStart_toStartOf="@id/crypto_name" />
+
+    <!-- Rank de la criptomoneda -->
+    <TextView
+        android:id="@+id/crypto_rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@id/crypto_symbol"
+        app:layout_constraintStart_toStartOf="@id/crypto_name" />
+
+    <!-- Precio actual -->
+    <TextView
+        android:id="@+id/crypto_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="@id/crypto_name"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Cambio porcentual en 24h -->
+    <TextView
+        android:id="@+id/crypto_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/crypto_price"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

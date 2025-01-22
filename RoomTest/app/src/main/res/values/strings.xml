@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CryptoPorfoli0</string>
+    <string name="header_title">CYPTO</string>
+    <string name="header_description">Crypto Portfolio</string>
+    <string name="add_button_text">My Porfolio</string>
+    <string name="add_button_description">Porfolio</string>
+    <string name="crypto_icon_description">Crypto icon</string>
+    <string name="quantity_hint">Balance</string>
+    <string name="price_hint">Price</string>
+    <string name="crypto_image">Crypto Image</string>
+</resources>

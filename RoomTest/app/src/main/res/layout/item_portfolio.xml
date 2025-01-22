@@ -1,0 +1,56 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <!-- Name -->
+    <TextView
+        android:id="@+id/portfolioName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Crypto Name"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/portfolioSymbol"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <!-- Symbol -->
+    <TextView
+        android:id="@+id/portfolioSymbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BTC"
+        android:textStyle="italic"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/portfolioName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <!-- Quantity -->
+    <TextView
+        android:id="@+id/portfolioQuantity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Quantity: 1.234"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/portfolioName"
+        app:layout_constraintEnd_toStartOf="@id/portfolioPrice"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <!-- Price -->
+    <TextView
+        android:id="@+id/portfolioPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$12,345.67"
+        app:layout_constraintStart_toEndOf="@id/portfolioQuantity"
+        app:layout_constraintTop_toBottomOf="@id/portfolioSymbol"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
